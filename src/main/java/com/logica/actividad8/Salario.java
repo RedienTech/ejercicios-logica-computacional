@@ -1,12 +1,11 @@
 package com.logica.actividad8;
 
-public class Entradas {
+public class Salario {
 
     private float SMMLV = 848232;
-    
     private float sueldoActual;
 
-    public Entradas (float sueldo) {
+    public Salario (float sueldo) {
         this.setSueldoActual(sueldo);
     }
 
@@ -33,7 +32,6 @@ public class Entradas {
     public float nuevoSueldo() {
         return this.getSueldoActual() + (this.getSueldoActual() * this.aumentoSueldo());
     }
-
 }    
 
       

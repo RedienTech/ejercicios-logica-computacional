@@ -19,4 +19,8 @@ public class Conteo {
     public boolean postivoNegativo() {
         return (this.getNumero() >= 0);
     }
+
+    public boolean esCero(){
+        return (this.getNumero() == 0);
+    }
 }

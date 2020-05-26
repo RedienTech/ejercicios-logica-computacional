@@ -1,5 +1,7 @@
 package com.logica.actividad4;
 
+import javax.swing.JOptionPane;
+
 public class Serie {
     private int numero;
 
@@ -17,11 +19,13 @@ public class Serie {
 
     public void ciclo() {
         int numero = 0;
-        System.out.println("Estos son los Primeros " + this.getNumero() + " Numeros de la serie.");
+        String message = "";
         for (int i = 1; i <= this.getNumero(); i++) {
             int suma = (int) Math.pow(2, (i - 1));
             numero += suma;
-            System.out.println(i + " : " + numero);
+            message += (i + " : " + numero + "\n");
         }
+        JOptionPane.showMessageDialog(null, "Estos son los Primeros " + this.getNumero() + " Numeros de la serie. \n " + 
+        message);
     }
 }
