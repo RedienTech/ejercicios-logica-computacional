@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class DatosSuma {
 
     public Suma getSuma() {
-        String opc = JOptionPane.showInputDialog(null, "Digite el Numero de figitos que desa conocer en la serie: ");
+        String opc = JOptionPane.showInputDialog(null, "Digite el Numero de digitos que desa conocer en la serie: ");
         int num = Integer.parseInt(opc);
         Suma instancia = new Suma(num);
         return instancia;

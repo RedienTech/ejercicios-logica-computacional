@@ -39,6 +39,7 @@ public class App
             case 7: 
                 DatosConteo instanciaConteo = new DatosConteo();
                 instanciaConteo.printResult();
+                break;
             case 8: 
                 DatosSalario instanciaSalario = new DatosSalario();
                 instanciaSalario.printResult();

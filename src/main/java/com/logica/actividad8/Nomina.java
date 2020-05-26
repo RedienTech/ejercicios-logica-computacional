@@ -26,7 +26,7 @@ public class Nomina {
             float salario = Float.parseFloat(entrada);
             Salario instancia = new Salario(salario);
             nomina += instancia.nuevoSueldo();
-            message += "El nuevo sueldo del trabajador N° " + i + " Sera: " + instancia.nuevoSueldo() + "\n";
+            message += "El nuevo sueldo del trabajador N° " + i + " Sera: $ " + instancia.nuevoSueldo() + " Pesos\n";
         }
         JOptionPane.showMessageDialog(null, message + "\n El valor de la nueva nomina sera: " + nomina);
     }

@@ -39,11 +39,14 @@ public class Sumatoria {
     }
 
     public void imprimirResult() {
+        this.evaluarNumeros();
+        float promPares = this.totalPares/this.pares;
+        float promImpares = this.totalImpares/this.impares;
         String message = "##### Resultados #####\n \n" +
         "El total de Numeros Pares: " + this.pares + "\n" +
-        "Promedio de Numeros Pares: " + this.totalPares/this.pares + "\n" + 
-        "El total de Numeros Impares: " + this.impares + "\n" + 
-        "Promedio de Numeros Impares: " + this.totalImpares/this.impares;
+        "Promedio de Numeros Pares: " + promPares + "\n" +
+        "El total de Numeros Impares: " + this.impares + "\n" +
+        "Promedio de Numeros Impares: " + promImpares;
         JOptionPane.showMessageDialog(null, message, "Resultado", 1);
     }
 }
